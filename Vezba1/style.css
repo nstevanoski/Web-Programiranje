@@ -1,0 +1,27 @@
+.box {
+    width: 400px;
+}
+
+.box > .box-1 {
+    background-color: #DAECF8;
+    width: 400px;
+    height: 200px;
+    z-index: -1;
+    position: absolute;
+}
+
+.box > .box-2 {
+    background-color: #CC4D20;
+    width: 350px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box > .box-2 > img {
+    width: 30%;
+}

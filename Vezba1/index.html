@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domasna zadaca</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://use.fontawesome.com/f80042f2fe.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="pb-2 pt-2">
+        <div class="btn btn-primary"><i class="fa fa-bookmark"></i> Home</div>
+        <div class="btn btn-info"><i class="fa fa-shopping-cart"></i> Cart</div>
+      </div>
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          style="width: 80%"
+          aria-valuenow="80"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          80%
+        </div>
+      </div>
+      <div>
+        <table class="table table-bordered text-center">
+          <thead>
+            <tr>
+              <th class="text-center" colspan="2">Месеци и часови</th>
+              <th class="text-center" scope="col">Денови</th>
+              <th class="text-center" scope="col">Име</th>
+              <th class="text-center" scope="col">Презиме</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-success">
+              <td>Април</td>
+              <td>100</td>
+              <td>2</td>
+
+              <td>Стефан</td>
+              <td>Стефаноски</td>
+            </tr>
+            <tr>
+              <td>Мај</td>
+              <td>45</td>
+              <td>1</td>
+              <td>Петко</td>
+              <td>Петкоски</td>
+            </tr>
+            <tr>
+              <td>Јули</td>
+              <td>120</td>
+              <td>4</td>
+              <td colspan="2">Нема Информација</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="box">
+        <div class="box-1"></div>
+        <div class="box-2">
+          <img src="images/eat-sleep-code-repeat.png" alt="" />
+        </div>
+      </div>
+      <div class="mt-3">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="movieTitle">Movie Title</label>
+              <input type="text" class="form-control" id="movieTitle" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="genre">Genre</label>
+              <select class="form-control">
+                <option selected disabled>Choose a genre</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="horror">Horror</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="director">Director</label>
+              <input type="text" class="form-control" id="director" />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="writer">Writer</label>
+              <input type="text" class="form-control" id="writer" />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="producer">Producer</label>
+              <input type="text" class="form-control" id="producer" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="website">Website</label>
+              <input type="text" class="form-control" id="website" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="yt-url">Youtube trailer URL</label>
+              <input type="text" class="form-control" id="yt-url" />
+            </div>
+          </div>
+
+          <b>Rating</b>
+
+          <div class="form-row">
+            <div class="form-group ml-1">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="gridCheck" />
+                <label class="form-check-label" for="gridCheck">
+                  Terrible
+                </label>
+              </div>
+            </div>
+            <div class="form-group ml-3">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="gridCheck" />
+                <label class="form-check-label" for="gridCheck">
+                  Watchable
+                </label>
+              </div>
+            </div>
+            <div class="form-group ml-3">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="gridCheck" />
+                <label class="form-check-label" for="gridCheck">
+                  Best ever
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <button type="submit" class="btn btn-danger">
+              Cancel <i class="fa fa-close"></i>
+            </button>
+            <button type="submit" class="btn btn-success ml-2">
+              Submit <i class="fa fa-check"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
